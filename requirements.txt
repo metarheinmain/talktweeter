@@ -1,0 +1,5 @@
+requests
+python-twitter
+python-dateutil
+pytz
+py.test
