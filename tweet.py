@@ -71,7 +71,7 @@ def main():
             for talk in talks:
                 d = dateutil.parser.parse(talk['date']).astimezone(tz)
 
-                if d < now or (d - now).seconds > 60 * 10:
+                if d < now or (d - now).days > 0 or (d - now).seconds > 60 * 10:
                     continue
 
                 if talk['guid'] in cache['sent']:
